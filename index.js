@@ -101,7 +101,7 @@ const questions = () => {
 
 
 const writeFile = data => {
-    fs.writeFile('dist/README.md', data, err => {
+    fs.writeFile('README.md', data, err => {
         
         if (err) {
             console.log(err);
