@@ -6,13 +6,13 @@ const generateMarkdown = data => {
     ${data.description}
 
     ## Table of Contents
-    - [Installation ](#installation)
-    - [Usage](#usage)
-    - [Screenshot](#screenshot)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#test)
-    - [Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Screenshot](#screenshot)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
     
     ## Installation
     ${data.install}

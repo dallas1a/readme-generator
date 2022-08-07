@@ -51,19 +51,41 @@ const questions = () => {
         type: "input",
         name: "description",
         message: "Give a description of your project: ",
-        default: '',
-    },
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter a description of your project!');
+                return false; 
+            }
+        }
+    }, 
+    
     {
         type: "input",
         name: "installation",
         message: "What are the steps required for installation.",
-        default: '',
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter steps required to install your project!');
+                return false; 
+            }
+        }
     },
     {
         type: "input",
         name: "usage",
         message: "Provide instructions and examples for use.", 
-        default: '',
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter a usage description!');
+                return false; 
+            }
+        }
     },
     {
         type: "input",
@@ -93,7 +115,14 @@ const questions = () => {
         type: "input",
         name: "email",
         message: "Enter your email address.",
-        default: '',
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter your email address!');
+                return false; 
+            }
+        },
     },
 ]);
 };
