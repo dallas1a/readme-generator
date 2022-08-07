@@ -1,5 +1,5 @@
 # Readme-Generator
-   
+Walkthrough video : https://watch.screencastify.com/v/3ZbV1gk3IkgFXC29xmIx   
   
 ## Description 
 An application that utilizes node and the inquirer package to create a professional readme
