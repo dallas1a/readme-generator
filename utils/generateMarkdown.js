@@ -2,10 +2,10 @@ const generateMarkdown = data => {
     return `# ${data.title}
    
   
-    ## Description 
-    ${data.description}
+## Description 
+${data.description}
 
-    ## Table of Contents
+## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [Screenshot](#screenshot)
@@ -14,30 +14,30 @@ const generateMarkdown = data => {
 * [Tests](#tests)
 * [Questions](#questions)
     
-    ## Installation
-    ${data.install}
+## Installation
+${data.install}
 
-    ## Usage
-    ${data.usage}
+## Usage
+${data.usage}
 
-    ## Screenshot
-    ![Screenshot](${data.screenshot})
+## Screenshot
+![Screenshot](${data.screenshot})
 
-    ## License 
-    This project is licensed under ${data.license}
-    ![badge](https://img.shields.io/badge/license-${data.license}-important)
+## License 
+This project is licensed under ${data.license}
+![badge](https://img.shields.io/badge/license-${data.license}-important)
 
-    ## Contributing 
-    ${data.contributors}
+## Contributing 
+${data.contributors}
 
-    ## Tests
-    ${data.test}
+## Tests
+${data.test}
 
   
 
-    ## Questions
-    If you have any questions about this project, please contact me at my email: ${data.email}. You can see more of my project repositories at https://github.com/${data.github}.
-  `;
+## Questions
+If you have any questions about this project, please contact me at my email: ${data.email}. 
+You can see more of my project repositories at https://github.com/${data.github}.`;
 
 }
 

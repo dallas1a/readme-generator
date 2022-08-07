@@ -24,8 +24,8 @@ const questions = () => {
         type: "input",
         name: "github",
         message: "Enter your GitHub username.",
-        validate: githubInput => {
-            if (githubInput) {
+        validate: nameInput => {
+            if (nameInput) {
                 return true;
             } else {
                 console.log('You need to enter your GitHub username!');
@@ -38,8 +38,8 @@ const questions = () => {
         name: "repo",
         message: "Enter the name of your GitHub repository.",
         default: '',
-        validate: repoInput => {
-            if (repoInput) {
+        validate: nameInput => {
+            if (nameInput) {
                 return true;
             } else {
                 console.log('You need to enter your GitHub repository name!');
@@ -91,7 +91,14 @@ const questions = () => {
         type: "input",
         name: "contributing",
         message: "List any contributors, if any, with links to their GitHub profiles.",
-        default: '',
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter any other contributors, write none if there were none');
+                return false; 
+            }
+        }
     },
     {
         type: "input",
@@ -108,7 +115,15 @@ const questions = () => {
     {
         type: "input",
         name: "screenshot",
-        message: "please enter relative path for your screenshot image."
+        message: "please enter relative path for your screenshot image.",
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter a relative path for your project screenshot!');
+                return false; 
+            }
+        }
     },
    
     {
