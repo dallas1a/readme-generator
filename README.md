@@ -1,8 +1,8 @@
-# Readme
+# Readme-Generator
    
   
 ## Description 
-creates a professional readme
+An application that utilizes node and the inquirer package to create a professional readme
 
 ## Table of Contents
 * [Installation](#installation)
@@ -14,23 +14,23 @@ creates a professional readme
 * [Questions](#questions)
     
 ## Installation
-undefined
+A user my use npm init to initiliaze and npm i inquirer to install the inquirer package.
 
 ## Usage
-follow installation and it will automatically create a readme for your project
+After installing a user must answer all the question prompts to generate the readme
 
 ## Screenshot
-![Screenshot](dsfdf)
+![Screenshot](utils\2022-08-07.png)
 
 ## License 
 This project is licensed under UCONN
 ![badge](https://img.shields.io/badge/license-UCONN-important)
 
 ## Contributing 
-undefined
+there were no contributors
 
 ## Tests
-npm test
+a user would use npm test after adding it to the json
 
   
 

@@ -1,9 +1,11 @@
 
+//sets constants for package imports 
 const inquirer = require(`inquirer`);
 const fs = require(`fs`);
 const generateReadme = require('./utils/generateMarkdown.js');
 
-
+// creates question prompts with inquirer to generate the readme, 
+//validating that there was an answer before proceeding
 const questions = () => {
   return inquirer.prompt([
     {
@@ -13,7 +15,7 @@ const questions = () => {
         default: '',
         validate: nameInput => {
             if (nameInput) {
-                return true;
+                return true
             } else {
                 console.log('You need to enter a project name!');
                 return false;
@@ -33,20 +35,7 @@ const questions = () => {
             }
         }
     },
-    {
-        type: "input",
-        name: "repo",
-        message: "Enter the name of your GitHub repository.",
-        default: '',
-        validate: nameInput => {
-            if (nameInput) {
-                return true;
-            } else {
-                console.log('You need to enter your GitHub repository name!');
-                return false;
-            }
-        }
-    },
+    
     {
         type: "input",
         name: "description",
@@ -104,7 +93,14 @@ const questions = () => {
         type: "input",
         name: "test",
         message: "How would a user test this application", 
-        default: '',
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter how you would test the application');
+                return false; 
+            }
+        }
     },
     {
         type: "list",
@@ -143,7 +139,7 @@ const questions = () => {
 };
 
 
-
+//create the function that writes the readme 
 const writeFile = data => {
     fs.writeFile('README.md', data, err => {
         
@@ -157,7 +153,7 @@ const writeFile = data => {
     })
 }; 
 
-
+//intitializes apllcation to prompt questions using the answers to write the readme file using writeFile.
 questions()
 
 .then(answers => {

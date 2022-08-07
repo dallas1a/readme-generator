@@ -1,3 +1,4 @@
+// uses the given format and takes the answers from the question prompts to create a readme with this format.
 const generateMarkdown = data => {
     return `# ${data.title}
    
@@ -15,7 +16,7 @@ ${data.description}
 * [Questions](#questions)
     
 ## Installation
-${data.install}
+${data.installation}
 
 ## Usage
 ${data.usage}
@@ -28,7 +29,7 @@ This project is licensed under ${data.license}
 ![badge](https://img.shields.io/badge/license-${data.license}-important)
 
 ## Contributing 
-${data.contributors}
+${data.contributing}
 
 ## Tests
 ${data.test}
@@ -40,5 +41,5 @@ If you have any questions about this project, please contact me at my email: ${d
 You can see more of my project repositories at https://github.com/${data.github}.`;
 
 }
-
+// exports the readme generated using the information answered 
 module.exports = generateMarkdown;
