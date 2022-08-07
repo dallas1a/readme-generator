@@ -14,7 +14,7 @@ An application that utilizes node and the inquirer package to create a professio
 * [Questions](#questions)
     
 ## Installation
-A user my use npm init to initiliaze and npm i inquirer to install the inquirer package.
+A user may use npm init to initiliaze and npm i inquirer to install the inquirer package.
 
 ## Usage
 After installing a user must answer all the question prompts to generate the readme
