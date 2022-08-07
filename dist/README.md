@@ -2,21 +2,21 @@
     ![license](http://img.shields.io/badge/license-UCONN-blue.svg)
   
     ## Description 
-    a readme gen
+    readme
 
     ## Table of Contents
     * [Installation Instructions](#installation)
     * [Usage Information](#usage)
     * [License](#license)
-    * [Contributing](#contributing)
-    * [Testing](#test)
+    * [Contributions](#contributing)
+    * [Testing Instructions](#test)
     * [Questions](#questions)
     
     ## Installation 
     undefined
 
     ## Usage 
-    blah blah blah
+    readme
 
     ## License 
     This project is licensed under UCONN
@@ -25,8 +25,8 @@
     undefined
 
     ## Tests
-    node index.js 
+    readme
 
     ## Questions
-    If you have any questions about this project, please contact me at my email: dallas.archer.bailey@gmail.com. You can see more of my project repositories at https://github.com/dallas1a.
+    If you have any questions about this project, please contact me at my email: dallas.. You can see more of my project repositories at https://github.com/dallas1a.
   

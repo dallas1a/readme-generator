@@ -22,6 +22,33 @@ const questions = () => {
     },
     {
         type: "input",
+        name: "github",
+        message: "Enter your GitHub username.",
+        validate: githubInput => {
+            if (githubInput) {
+                return true;
+            } else {
+                console.log('You need to enter your GitHub username!');
+                return false;
+            }
+        }
+    },
+    {
+        type: "input",
+        name: "repo",
+        message: "Enter the name of your GitHub repository.",
+        default: '',
+        validate: repoInput => {
+            if (repoInput) {
+                return true;
+            } else {
+                console.log('You need to enter your GitHub repository name!');
+                return false;
+            }
+        }
+    },
+    {
+        type: "input",
         name: "description",
         message: "Give a description of your project: ",
         default: '',
@@ -58,31 +85,10 @@ const questions = () => {
     },
     {
         type: "input",
-        name: "github",
-        message: "Enter your GitHub username.",
-        validate: githubInput => {
-            if (githubInput) {
-                return true;
-            } else {
-                console.log('You need to enter your GitHub username!');
-                return false;
-            }
-        }
+        name: "screenshot",
+        message: "please enter relative path for your screenshot image."
     },
-    {
-        type: "input",
-        name: "repo",
-        message: "Enter the name of your GitHub repository.",
-        default: '',
-        validate: repoInput => {
-            if (repoInput) {
-                return true;
-            } else {
-                console.log('You need to enter your GitHub repository name!');
-                return false;
-            }
-        }
-    },
+   
     {
         type: "input",
         name: "email",
@@ -95,7 +101,7 @@ const questions = () => {
 
 
 const writeFile = data => {
-    fs.writeFile('README.md', data, err => {
+    fs.writeFile('dist/README.md', data, err => {
         
         if (err) {
             console.log(err);

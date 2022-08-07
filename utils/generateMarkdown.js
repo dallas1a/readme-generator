@@ -1,6 +1,6 @@
 const generateMarkdown = data => {
     return `# ${data.title}
-    ![license](http://img.shields.io/badge/license-${data.license}-blue.svg)
+   
   
     ## Description 
     ${data.description}
@@ -8,9 +8,10 @@ const generateMarkdown = data => {
     ## Table of Contents
     * [Installation Instructions](#installation)
     * [Usage Information](#usage)
+    * [Screenshot](#screenshot)
     * [License](#license)
-    * [Contributing](#contributing)
-    * [Testing](#test)
+    * [Contributions](#contributing)
+    * [Testing Instructions](#test)
     * [Questions](#questions)
     
     ## Installation 
@@ -19,14 +20,20 @@ const generateMarkdown = data => {
     ## Usage 
     ${data.usage}
 
+    ## Screenshot
+    ![Screenshot](${data.screenshot})
+
     ## License 
     This project is licensed under ${data.license}
+    ![badge](https://img.shields.io/badge/license-${data.license}-important)
 
     ## Contributing 
     ${data.contributors}
 
     ## Tests
     ${data.test}
+
+  
 
     ## Questions
     If you have any questions about this project, please contact me at my email: ${data.email}. You can see more of my project repositories at https://github.com/${data.github}.
