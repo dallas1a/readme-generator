@@ -1,23 +1,23 @@
-# Readme Generator 
+# Readme
    
   
     ## Description 
     readme
 
     ## Table of Contents
-    - [Installation Instructions](#installation)
-    - [Usage Information](#usage)
+    - [Installation ](#installation)
+    - [Usage](#usage)
     - [Screenshot](#screenshot)
     - [License](#license)
-    - [Contributions](#contributing)
-    - [Testing Instructions](#test)
+    - [Contributing](#contributing)
+    - [Tests](#test)
     - [Questions](#questions)
     
-    ## Installation 
+    ## Installation
     undefined
 
-    ## Usage 
-    exAMPLE
+    ## Usage
+    readme
 
     ## Screenshot
     ![Screenshot]()
@@ -30,10 +30,10 @@
     undefined
 
     ## Tests
-    test
+    npm test
 
   
 
     ## Questions
-    If you have any questions about this project, please contact me at my email: dallas.archer.bailey@gmail.com. You can see more of my project repositories at https://github.com/dallas1a.
+    If you have any questions about this project, please contact me at my email: . You can see more of my project repositories at https://github.com/dallas1a.
   
